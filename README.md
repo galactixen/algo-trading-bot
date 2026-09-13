@@ -10,7 +10,7 @@ An algorithmic momentum trading system built on the [Alpaca](https://alpaca.mark
 | `AAPLTEST5.py` | Live paper-trading bot. Runs the same core strategy in real time against the Alpaca paper trading API, with bracket orders, session guards, daily trade caps, and consecutive-loss limits. |
 | `grid_search.py` | Parameter optimizer. Grid-searches stop-loss / take-profit / cooldown combinations per ticker and outputs the best-performing set. |
 | `aapl_max_tester.py` | Standalone experiment with a mean-reversion strategy (RSI + EMA200 + Bollinger Bands) on AAPL over a 2-year window. |
-| `aapl_debug_scalper.py` | Small debug/trace tool — prints a step-by-step simulated trade log for a simple VWAP + MACD scalping setup, useful for sanity-checking indicator behavior. |
+| `aapl_debug_scalper.py` | Small debug/trace tool; prints a step-by-step simulated trade log for a simple VWAP + MACD scalping setup. |
 
 ## Strategy overview
 
@@ -51,4 +51,4 @@ python3 grid_search.py
 
 ## Disclaimer
 
-This project is for educational and research purposes. It trades against Alpaca's **paper trading** environment by default. Nothing here is financial advice, and past backtest performance is not indicative of future results.
+This project is for educational and research purposes. It trades against Alpaca's paper trading environment by default. Nothing here is financial advice, and past backtest performance is not indicative of future results.
